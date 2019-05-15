@@ -5,6 +5,7 @@ import org.junit.internal.runners.statements.Fail;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+import testing.FormedLargestNumberTest;
 import testing.FrequencySortingTest;
 
 public class TestRunner {
@@ -16,7 +17,7 @@ public class TestRunner {
         System.out.println(result.wasSuccessful());
     }
     public void formedLargestNumber () {
-        Result result = JUnitCore.runClasses(FormedLargestNumber.class);
+        Result result = JUnitCore.runClasses(FormedLargestNumberTest.class);
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
         }
