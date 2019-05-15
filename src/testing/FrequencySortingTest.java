@@ -19,15 +19,16 @@ public class FrequencySortingTest {
         int[] output = {9,9,9,9,9,9,2,2,2,2,5,5,5,1,1};
         assertArrayEquals(output,frequencySorting.sorting(input));
     }
-    @Test
-    public void test2 () {
-        int[] input = {};
-        int[] output = {};
-        assertArrayEquals(output,frequencySorting.sorting(input));
-    }
-    public void test3 () {
-
-        assertArrayEquals(null,frequencySorting.sorting(null));
-    }
+//    @Test
+//    public void test2 () {
+//        int[] input = {};
+//        int[] output = {};
+//        assertArrayEquals(output,frequencySorting.sorting(input));
+//    }
+//    @Test
+//    public void test3 () {
+//
+//        assertArrayEquals(null,frequencySorting.sorting(null));
+//    }
 
 }
