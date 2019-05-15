@@ -5,6 +5,8 @@ import static java.util.stream.Collectors.*;
 
 public class FrequencySorting {
     public int[] sorting (int[] array) {
+        if (array == null) return  null;
+
         Map<Integer, Integer> map = new TreeMap();
         for (int element : array){
             if (map.containsKey(element)){
