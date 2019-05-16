@@ -18,15 +18,15 @@ public class FormedLargestNumberTest {
         int[] input = {54, 546, 548, 60};
         assertEquals("6054854654", formedLargestNumber.largestNumber(input));
     }
-//    @Test
-//    public void test2 () {
-//        int[] input = {};
-//        assertEquals(null, formedLargestNumber.largestNumber(input));
-//    }
-//    @Test
-//    public void test3 () {
-//        int[] input = null;
-//        assertEquals(null, formedLargestNumber.largestNumber(input));
-//    }
+    @Test
+    public void test2 () {
+        int[] input = {};
+        assertEquals(null, formedLargestNumber.largestNumber(input));
+    }
+    @Test
+    public void test3 () {
+        int[] input = null;
+        assertEquals(null, formedLargestNumber.largestNumber(input));
+    }
 
 }
