@@ -1,5 +1,13 @@
 package collectionExercises;
 
+//        [Explanation]
+//        Given an array A[] of integers, sort the array according to frequency of elements.
+//        That is elements that have higher frequency come first. If frequencies of two elements are same,
+//        then smaller number comes first.
+
+//        input: 5 5 4 6 4    output: 4 4 5 5 6
+//        input: 9 9 9 2 5  output: 9 9 9 2 5
+
 import java.util.*;
 import static java.util.stream.Collectors.*;
 
