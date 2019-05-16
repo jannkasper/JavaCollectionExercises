@@ -15,6 +15,7 @@ public class FrequencySorting {
     public int[] sorting (int[] array) {
         if (array == null) return  null;
 
+        // Create Map where Key={number} Value={amount}
         Map<Integer, Integer> map = new TreeMap();
         for (int element : array){
             if (map.containsKey(element)){
@@ -23,12 +24,12 @@ public class FrequencySorting {
                 map.put(element,1);
             }
         }
+        // Sort Map starting from the biggest Value={amount}
         Map<Integer, Integer> sorted = map
                 .entrySet()
                 .stream()
                 .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
-                .collect(
-                        toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
+                .collect(toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
                                 LinkedHashMap::new));
 
         int count = 0;
